@@ -9,7 +9,7 @@ const Recipe = () => {
   const [recipe, setrecipe] = useState([]);
   // console.log(recipe);
   const getAllRecipe = async () => {
-    let res = await fetch(' https://api.edamam.com/search?q=burger&app_id=e9098c0e&app_key=2e08c4b4f3976bb085cd3b73a6c9720e ')
+    let res = await fetch(' https://api.edamam.com/search?q=burger&app_id=e9098c0e&app_key=2e08c4b4f3976bb085cd3b73a6c9720e ');
     let data = await res.json();
     console.log(data.hits);
     setrecipe(data.hits);
@@ -20,7 +20,7 @@ const Recipe = () => {
   }, [])
 
   const hnadleClick = (obj) => {
-    console.log(obj);
+    console.log(obj)
     // console.log(i+1);
 
 
