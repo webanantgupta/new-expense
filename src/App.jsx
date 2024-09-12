@@ -1,4 +1,4 @@
-// import Home from "./pages/Home";
+import Home from "./pages/Home";
 import About from "./pages/About";
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Pnf from "./pages/Pnf";
@@ -18,7 +18,7 @@ function App() {
      <BrowserRouter> 
      {/* <Navbar/> */}
       <Routes>
-        <Route path="/" element={<Recipe/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/counter" element={<Counter/>}/>
         <Route path="/expense" element={<Expense/>}/>
